@@ -61,12 +61,12 @@ To run this project locally, you need:
 - **DeleteInput.java**: Servlet to delete an input from the database.
 
 ## How to Use
-1. **Input**: Go to the home page (index.html), enter a string, and click "Submit" to check if it's a palindrome.
+1. **Input**: Go to the home page (index.html), enter an id and a string, and click "Submit" to check if it's a palindrome.
 2. **Display Table**: Click the "Display Table" button to see all inputs and their palindrome results.
 3. **Delete Input**: Use the "Delete an Input" button to delete an entry from the database.
 
 ## Example
-1. **Input**: "madam"
+1. **Input**: "101", "madam"
 2. **Result**: The system will display "Yes" if it's a palindrome, or "No" if it's not.
 
 ## Contributing
