@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Input Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+        	width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        button{
+            background-color: #dc3545;        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Input</h1>
+        <form action="deleteInput" method="get">
+            <div class="form-group">
+                <input type="text"placeholder="enter an input" name="input" required>
+            </div>
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+</body>
+</html>
