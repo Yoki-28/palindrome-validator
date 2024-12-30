@@ -5,13 +5,18 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="style.css">
 <style>
-	input[type="text"]
-	{
-		margin-bottom:15px;
-	}
 	button
 	{
 		background-color: #007bff;
+	}
+	input
+	{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom:15px;
 	}
 </style>
 </head>
@@ -19,8 +24,10 @@
         <div class="container">
         	<h1>Palindrome Validator</h1>
             <form action="palindromeServlet">
+            <label>Id</label>
+            <input type="number" name="id" placeholder="enter an id">
             <label>Input</label>
-            <input type="text" name="input" placeholder="enter a string">
+            <input type="text" name="input" placeholder="enter an input">
                 <button>Submit</button>
             </form>
             <form action="display">

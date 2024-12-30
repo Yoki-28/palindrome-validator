@@ -14,9 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 public class PalindromeServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String ids = req.getParameter("id");
+		int id = Integer.parseInt(ids);
 		String inp = req.getParameter("input");
 		if(inp.length()>0) {
 			InputClass obj = new InputClass();
+			obj.setId(id);
 			obj.setInput(inp);
 			if(palindromeChecker(inp)) {
 				obj.setYes("Yes");
@@ -34,7 +37,7 @@ public class PalindromeServlet extends HttpServlet{
 			}
 			else {
 				PrintWriter pw = resp.getWriter();
-				pw.print("Palindrome is not checked for the input!");
+				pw.print("Palindrome is not checked for the given input!");
 			}
 		}
 		else {

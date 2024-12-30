@@ -90,6 +90,7 @@ public class DisplayServlet extends HttpServlet{
 				+ "        <table>\r\n"
 				+ "            <thead>\r\n"
 				+ "                <tr>\r\n"
+				+ "                    <th>Id</th>\r\n"
 				+ "                    <th>Input</th>\r\n"
 				+ "                    <th>If Yes</th>\r\n"
 				+ "                    <th>If No</th>\r\n"
@@ -101,6 +102,7 @@ public class DisplayServlet extends HttpServlet{
 		
 		for(InputClass ic : li) {
 			pw.print("<tr>\r\n"
+					+ "		<td>"+ic.getId()+"</td>\r\n"
 					+ "		<td>"+ic.getInput()+"</td>\r\n"
 					+ "     <td>"+ic.getYes()+"</td>\r\n"
 					+ "     <td>"+ic.getNo()+"</td>\r\n"
@@ -108,7 +110,7 @@ public class DisplayServlet extends HttpServlet{
 		}
 		pw.print("</tbody>\r\n"
 				+ "        </table>\r\n"
-				+ " 	   <button><a href="+"deleteForm.html"+">Delete an Input</a></button>\r\n"
+				+ " 	   <button><a href="+"deleteForm.html"+">Delete</a></button>\r\n"
 				+ "    </div>\r\n"
 				+ "</body>\r\n"
 				+ "</html>");
