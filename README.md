@@ -76,7 +76,7 @@ To run this project locally, you need:
 5. Open a pull request.
 
 ## Demo
-![Palindrome Validator Demo](assets/plaindrome-validator.mp4)
+![Palindrome Validator Demo](assets/plaindrome-validator.gif)
 
 ## Acknowledgements
 - **PostgreSQL** for the database.
