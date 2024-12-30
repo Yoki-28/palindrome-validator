@@ -32,7 +32,8 @@ To run this project locally, you need:
        CREATE DATABASE palindromeInput;
     2. Create a table to store input values and their palindrome check results:
        ```bash
-       CREATE TABLE inputtable (
+        CREATE TABLE inputtable (
+            id INTEGER PRIMARY KEY,
             input VARCHAR(255),
             yes VARCHAR(3),
             no VARCHAR(3)
